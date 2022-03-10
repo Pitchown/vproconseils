@@ -7,6 +7,9 @@
 !(function($) {
   "use strict";
 
+
+  
+
   // Header fixed and Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -188,5 +191,6 @@
     delay: 10,
     time: 1000
   });
+
 
 })(jQuery);
