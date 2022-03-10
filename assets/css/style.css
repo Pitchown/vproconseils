@@ -4,7 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -570,6 +570,17 @@ section {
   background: #fff;
   padding: 80px 0;
 }
+
+#about .about-container .testbackground {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 
 #about .about-container .background {
   min-height: 300px;
@@ -1192,3 +1203,131 @@ section {
   font-size: 13px;
   color: #ccc;
 }
+
+/* .user {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+} */
+
+ .user {
+  display: flex; 
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  box-shadow: -6px 8px 12px #aaa;
+  border-width: 2px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+} 
+.mainCircle{
+  
+  width: 362px;
+  height: 362px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #426cb4;
+  border-width: 2px;   
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+
+.one {
+  background-image:  url(../img/vincent2.png);
+}
+
+
+
+
+.delimitation {
+  /* border-top-style: dashed;    */
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 15px;
+  border-width: 1px;
+  border-color: #426cb4;
+  display: flex;
+}
+
+.delimitation::before{
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #426cb4;
+  position: relative;
+  top:-2.5px;
+}
+
+.delimitation::after {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: #426cb4;
+  position: relative;
+  top:-2.5px;
+}
+
+/* blockquote {
+  margin-top: 40px;
+}
+
+blockquote::before {
+  content: open-quote;
+  color: #426cb4;
+  text-shadow: none;
+  text-indent: 0;
+  font-size: 3em;
+  line-height: .5;  
+}
+
+blockquote::after {
+  content: close-quote;
+  color: #426cb4;
+  text-shadow: none;
+  text-indent: 0;
+  font-size: 3em;
+  line-height: .5;
+} */
+
+blockquote {
+  margin: 0;
+  margin-top: 15px;
+  font-family: 'Dancing Script';
+  font-size: 22px;
+  color:black;
+  text-align: justify;
+}
+
+blockquote p {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+} */
