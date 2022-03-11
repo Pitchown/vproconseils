@@ -1224,7 +1224,7 @@ section {
   width: 310px;
   height: 310px;
   border-radius: 50%;
- /* box-shadow: -6px 8px 12px #aaa; */
+  box-shadow: -6px 8px 12px #aaa;
   border-width: 2px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1248,7 +1248,9 @@ section {
 
 
 .one {
-  background-image:  url(../img/Image\ rond1.png);
+  background-position-y: -47px;
+  background-position-x: 16px;
+  background-image:  url(../img/vincent.jpg);
 }
 
 
@@ -1372,7 +1374,7 @@ li:before {
   /* (B1) VERTICAL LINE */
   content: "";
   width: 5px;
-  background-color: #426cb4;
+  background-color: grey;
  
   /* (B2) POSITION TO THE LEFT */
   position: absolute;
