@@ -501,13 +501,14 @@ section {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .section-header .section-description {
   text-align: center;
-  padding-bottom: 40px;
+ /* padding-bottom: 40px; */
   color: #999;
+  font-family: 'Poppins';
 }
 
 /*--------------------------------------------------------------
@@ -1331,13 +1332,23 @@ blockquote p {
 
 ul {
   list-style-type: none;
+  padding: 0px;
+}
+
+ul .services {
+  text-align: justify;
+    /* border: aqua; */
+    border-left-style: outset;
+    /* border-width: 1px; */
+    margin-bottom: 11px;
 }
 
 li {
   text-align: left;
 }
 li:before {
-  content: '- ';
+ /* content: '- '; */
+ /* margin-left: -7px; */
 }
 
 
@@ -1365,7 +1376,7 @@ li:before {
   padding: 10px 10px 10px 50px;
  
   /* (A3) OPTIONAL WIDTH RESTRICTION */
-  max-width: 400px;
+  max-width: 470px;  
 }
 .vtl, .vtl * { box-sizing: border-box; }
 
@@ -1374,12 +1385,100 @@ li:before {
   /* (B1) VERTICAL LINE */
   content: "";
   width: 5px;
-  background-color: grey;
+  background-color: #bdb5b5;
  
   /* (B2) POSITION TO THE LEFT */
   position: absolute;
-  top: 0; bottom: 0; left: 12px;
+  top: 26px; bottom: 0; left: 12px;
+  max-height: 348px;
 }
+
+@media (max-width: 1200px) {
+.vtl::before {
+  /* (B1) VERTICAL LINE */
+  content: "";
+  width: 5px;
+  background-color: #bdb5b5;
+ 
+  /* (B2) POSITION TO THE LEFT */
+  position: absolute;
+  top: 32px; bottom: 0; left: 12px;
+  max-height: 435px;
+}
+}
+
+@media (max-width: 992px){
+.vtl::before {
+  /* (B1) VERTICAL LINE */
+  content: "";
+  width: 5px;
+  background-color: #bdb5b5;
+ 
+  /* (B2) POSITION TO THE LEFT */
+  position: absolute;
+  top: 26px; bottom: 0; left: 12px;
+  max-height: 348px;
+}
+}
+
+
+@media (max-width: 442px){
+  .vtl::before {
+    /* (B1) VERTICAL LINE */
+    content: "";
+    width: 5px;
+    background-color: #bdb5b5;
+   
+    /* (B2) POSITION TO THE LEFT */
+    position: absolute;
+    top: 31px; bottom: 0; left: 12px;
+    max-height: 371px;
+  }
+  }
+
+  @media (max-width: 442px){
+    .vtl::before {
+      /* (B1) VERTICAL LINE */
+      content: "";
+      width: 5px;
+      background-color: #bdb5b5;
+     
+      /* (B2) POSITION TO THE LEFT */
+      position: absolute;
+      top: 31px; bottom: 0; left: 12px;
+      max-height: 397px;
+    }
+    }
+
+    @media (max-width: 411px){
+      .vtl::before {
+        /* (B1) VERTICAL LINE */
+        content: "";
+        width: 5px;
+        background-color: #bdb5b5;
+       
+        /* (B2) POSITION TO THE LEFT */
+        position: absolute;
+        top: 31px; bottom: 0; left: 12px;
+        max-height: 423px;
+      }
+      }
+
+      @media (max-width: 359px){
+        .vtl::before {
+          /* (B1) VERTICAL LINE */
+          content: "";
+          width: 5px;
+          background-color: #bdb5b5;
+         
+          /* (B2) POSITION TO THE LEFT */
+          position: absolute;
+          top: 31px; bottom: 0; left: 12px;
+          max-height: 449px;
+        }
+        }
+
+
 
 /* (C) COSMETICS FOR EVENTS */
 div.event {
@@ -1388,6 +1487,7 @@ div.event {
   position: relative;
   border-radius: 6px;
   margin-bottom: 10px;
+  font-family: 'Poppins';
 }
 
 /* (D) COSMETICS FOR EVENT DATE & TEXT */
@@ -1418,7 +1518,7 @@ div.event::before {
 div.event::after {
   /* (F1) "MAGIC CIRCLE" */
   content: "";
-  background: #fff;
+  background: #426cb4;
   border: 4px solid #426cb4;
   width: 16px; height: 16px;
   border-radius: 50%;
