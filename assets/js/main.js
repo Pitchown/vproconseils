@@ -5,10 +5,12 @@
 * License: https://bootstrapmade.com/license/
 */
 !(function($) {
-  "use strict";
+  "use strict";  
 
-
-  
+var $myGroup = $('#groupe');
+$myGroup.on('show.bs.collapse','.collapse', function() {
+$myGroup.find('.collapse.show').collapse('hide');
+});
 
   // Header fixed and Back to top button
   $(window).scroll(function() {
