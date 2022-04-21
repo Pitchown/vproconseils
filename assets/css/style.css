@@ -1530,28 +1530,38 @@ div.event::after {
 
 
 .half-circle {
-  width: 200px;
+  /* width: 200px;
   height: 100px;
-  /*background-color: gold; */
+ ackground-color: gold; 
   border-top-left-radius: 110px;
   border-top-right-radius: 110px;
   border: 10px solid #426cb4;
   box-shadow: inset 9px 12px 16px -8px #898989;
   border-bottom: 0;
-  margin-top: 20px;
+  margin-top: 20px;*/
+
+  width: 200px;
+    height: 100px;
+    /* background-color: gold; */
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 2px solid #426cb4;
+    box-shadow: inset -7px -2px 16px -8px #898989;
+    border-bottom: 0;
+    margin-top: 20px;
 }
 
-.half-circle::before{
+ /*.half-circle::before{
   content: "";
   position: absolute;
   width: 24px;
   border-bottom: 9px solid #426cb4;
   margin-top: 81px;
   margin-left: -115px;
-  /*box-shadow: 1px 3px 5px #898989;*/
-}
+ box-shadow: 1px 3px 5px #898989;
+}*/
  
-.arrow-down {
+/*.arrow-down {
   width: 0;
   height: 0;
   border-right: 12px solid transparent;
@@ -1561,7 +1571,7 @@ div.event::after {
   margin-top: -3px;
   box-shadow: inset 9px 12px 16px -8px #898989;
   
-}
+} */
 
 .etape {
   margin-left: 29px;
@@ -1573,12 +1583,16 @@ div.event::after {
 
 .chiffre {
   position: absolute;
-  top: -60px;
+  top: -41px;
   left: 72px;
-  font-size: 75px;
+  font-size: 65px;
   font-family: cursive;
   font-weight: bold;
   text-shadow: 4px 5px 9px #999393;
+  }
+
+  .size {
+    font-size: 44px;
   }
 
 .half-title{
@@ -1620,4 +1634,13 @@ vertical-align: top;
 
 .prenite{
   padding: 80px 0 60px 0;
+}
+
+
+.centerTexte {
+  text-align: center;
+}
+
+.lineHeightNuage{
+  line-height: 57px;
 }
